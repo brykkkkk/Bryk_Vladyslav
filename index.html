@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab10</title>
+    <style>
+      .body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lavenderblush;
+    }
+    label {
+    font-weight: normal;
+    }
+    </style>
+  </head>
+  <body class="body" id="body">
+    <h2>Пройдіть форму щоб знайти потрібний вам телефон</h2>
+    <form action="">
+      <br/>
+      <label for="firm">Фірми:</label>
+      <select name="firm" id="firm">
+        <option value="" selected disabled>оберіть фірму виробника</option>
+        <option value="Іфоне">Іфоне</option>
+        <option value="Сяомі">Сяомі</option>
+        <option value="Самсунк">Самсунк</option>></select>
+      <br /><br />
+
+
+      <label for="model">Модель:</label>
+      <select name="model" id="model">
+        <option value="" selected disabled>оберіть модель телефону</option>
+        <option value="15 про макс">15 про макс</option>
+        <option value="редмі нот 7">редмі нот 7</option>
+        <option value="гелексі с6 плюс">гелексі с6 плюс</option>
+      </select><br /><br />
+
+
+      <input type="radio" id="mc" name="display" value="з кольоровим дисплейом" />
+      <label for="ua">з кольоровим дисплейом</label><br />
+      <input type="radio" id="bw" name="display" value="з чорно-білим дисплейом" />
+      <label for="en">з чорно-білим дисплейом</label><br />
+      <br />
+
+      <label for="price">з ціною, не вищою за*:</label>
+      <input type="text" id="price" name="price" />
+      <select name="valyuta" id="valyuta">
+        <option value="" selected disabled>євро</option>
+        <option value="долари">долари</option>
+        <option value="гривні">гривні</option>
+      </select><br /><br />
+
+
+      <label for="addition">Додаткові вимоги</label><br />
+      <input
+        type="checkbox"
+        id="addition1"
+        name="tell_addition"
+        value="Вбудована камера"
+      />
+      <label for="subject1">Вбудована камера</label><br />
+
+      <input 
+      type="checkbox" 
+      id="addition2" 
+      name="tell_addition" 
+      value="Диктофон" />
+      <label for="addition2">Диктофон</label><br />
+
+      <input
+        type="checkbox"
+        id="addition3"
+        name="tell_addition"
+        value="Јаѵа-ігри"
+      />
+      <label for="addition3">Јаѵа-ігри</label><br/>
+
+      <input
+        type="checkbox"
+        id="addition4"
+        name="tell_addition"
+        value="Органайзер"
+      />
+      <label for="addition4">Органайзер</label><br /><br />
+
+
+      <label for="usremail">Моя електронна адреса:</label>
+      <input type="email" id="usremail" name="usremail" /><br /><br />
+
+
+      <input type="submit" value="Відправити запит" id="btn_submit" style="margin-left: 80px;"/>
+
+      <h2>Топ 5 пісень світу:</h2>
+      <ul class="parallel-list" style="list-style-type: square">
+        <li>Петро щур - мамина світлиця</li>
+        <li>МС Петя - діти сироти</li>
+        <li>гурт "Барвінок" - кучері чичері</li>
+        <li>Валентин Стрикало - Ялта-Україна</li>
+        <li>Злий репер Зеник - ГМО</li>
+      </ul>
+
+
+      <br /><br />
+      <button id="btn_background">Фон документа</button>
+      <button id="btn_border">Межі і контури</button>
+      <button id="btn_list">Стиль списку</button>
+      <button id="btn_margin">Зовнішні і внутрішні поля</button>
+      <button id="btn_text">Властивості тексту</button>
+
+    </form>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <br/><br/><br/>
+
+    <script src="script.js"></script>
+  </body>
+</html>
